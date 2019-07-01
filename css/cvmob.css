@@ -1,0 +1,288 @@
+/* 
+    Crée le : 9 mars 2018, 11:45:39
+    Auteur     : Rue de l'info
+*/
+
+/* tous écrans mobiles */
+@media screen and (max-width:399px){
+    body{
+        font-size: 10px;
+        position: relative; /* pour photo identité */
+    }
+
+    /* titre  à gauche */
+    body>header{
+        display: block;
+        float:left;
+        width:60%;
+        margin-bottom: 0.5em;
+    }
+
+    /* photo identité à droite */
+    #civil>img {
+        position: absolute;
+        right:0px;
+        top:0px;
+        display: block;
+        float:right;
+        width:50%;
+        max-width:130px;
+        border: 3px solid white;
+        border-radius: 5px;
+        box-shadow : 0 0 3px blue;
+    }
+    
+    /* bloc civilité sous photo */
+    #civil{
+        clear: both;
+    }
+
+    /* nom de la personne  - idem version Pc pour autres titres */
+    #civil h1{ 
+        font-size: 2em;
+        margin: 0.625em  0px; 
+        font-weight: bold;
+        color: white;
+        background-color: blue;
+    }
+
+    /* bloc divers */
+    #divers {
+        background-color: blue;
+        color: white;
+        padding: .5em  0.77972709551657% ; 
+    }
+
+    
+    /* triangles pour détails à la demande */
+    /* ----------------------------------- */
+    #expe h1, #divers h2 {
+        position: relative;
+    }
+
+    #expe h1 img, #divers h2 img {
+        position: absolute;
+        right: 0px;
+        bottom : 0px;
+    }
+
+    /* énum divers et expé à la demande et positionnés en ligne */
+    ul{
+        display:none;
+    }
+
+    ul li{
+        display: inline;
+    }
+
+    ul li:after {
+        content:' - '; /* séparateur */
+    }
+
+    ul li:last-of-type:after {
+        content:'.'; /* un point après le dernier */
+    }
+
+    /* affichage à la demande  */
+    #expe h1:hover+ul, #divers h2:hover+ul{
+        display: block;
+    }
+
+    /*  rotation triangle */
+    #expe h1 img:hover, #divers h2 img:hover {
+        transform: rotate(180deg);
+        transition: transform 0.2s ease-in-out;
+    }
+}
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68
+69
+70
+71
+72
+73
+74
+75
+76
+77
+78
+79
+80
+81
+82
+83
+84
+85
+86
+87
+88
+89
+90
+91
+92
+93
+94
+95
+96
+/* 
+    Crée le : 9 mars 2018, 11:45:39
+    Auteur     : Rue de l'info
+*/
+ 
+/* tous écrans mobiles */
+@media screen and (max-width:399px){
+    body{
+        font-size: 10px;
+        position: relative; /* pour photo identité */
+    }
+ 
+    /* titre  à gauche */
+    body>header{
+        display: block;
+        float:left;
+        width:60%;
+        margin-bottom: 0.5em;
+    }
+ 
+    /* photo identité à droite */
+    #civil>img {
+        position: absolute;
+        right:0px;
+        top:0px;
+        display: block;
+        float:right;
+        width:50%;
+        max-width:130px;
+        border: 3px solid white;
+        border-radius: 5px;
+        box-shadow : 0 0 3px blue;
+    }
+    
+    /* bloc civilité sous photo */
+    #civil{
+        clear: both;
+    }
+ 
+    /* nom de la personne  - idem version Pc pour autres titres */
+    #civil h1{ 
+        font-size: 2em;
+        margin: 0.625em  0px; 
+        font-weight: bold;
+        color: white;
+        background-color: blue;
+    }
+ 
+    /* bloc divers */
+    #divers {
+        background-color: blue;
+        color: white;
+        padding: .5em  0.77972709551657% ; 
+    }
+ 
+    
+    /* triangles pour détails à la demande */
+    /* ----------------------------------- */
+    #expe h1, #divers h2 {
+        position: relative;
+    }
+ 
+    #expe h1 img, #divers h2 img {
+        position: absolute;
+        right: 0px;
+        bottom : 0px;
+    }
+ 
+    /* énum divers et expé à la demande et positionnés en ligne */
+    ul{
+        display:none;
+    }
+ 
+    ul li{
+        display: inline;
+    }
+ 
+    ul li:after {
+        content:' - '; /* séparateur */
+    }
+ 
+    ul li:last-of-type:after {
+        content:'.'; /* un point après le dernier */
+    }
+ 
+    /* affichage à la demande  */
+    #expe h1:hover+ul, #divers h2:hover+ul{
+        display: block;
+    }
+ 
+    /*  rotation triangle */
+    #expe h1 img:hover, #divers h2 img:hover {
+        transform: rotate(180deg);
+        transition: transform 0.2s ease-in-out;
+    }
+}
